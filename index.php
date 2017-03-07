@@ -24,11 +24,12 @@
                 <h1>Sean Misra</h1>
             </div>
         </header>
+        
         <main>
             <div class="icon_set">
                 <a href="https://www.linkedin.com/in/sean-misra-0972079b" class="fa fa-linkedin-square" aria-hidden="true" id="social_one"></a>
                 <a href="https://github.com/seanmisra" class="fa fa-github-square" aria-hidden="true" id="social_two"></a>
-                <a class="fa fa-paper-plane" aria-hidden="true" id="social_three"></a>
+                <a href="#" class="fa fa-paper-plane" aria-hidden="true" id="social_three"></a>
                 
                 <!-- Dialog Contact Form -->
                 <div id="dialog" title="Contact"> 
@@ -46,8 +47,8 @@
                             <textarea class='form-control' id="message" name="message" type="text" placeholder="Message" rows=8 required oninvalid="this.setCustomValidity('I think you forgot the message')" oninput="setCustomValidity('')"></textarea>
                         </div>    
                         <div class='form-group' id = 'submit'>
-					                   <input type='submit' id ='submitButton' class='btn btn-success' value='Send'> 
-				                </div>
+					       <input type='submit' id ='submitButton' class='btn btn-success' value='Send'> 
+				        </div>
                     </form>
                 </div>
                 

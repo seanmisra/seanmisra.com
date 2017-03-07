@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    // Contact form dialog
+    // Contact form pop-up
     $(function() {
         $("#dialog").dialog({
             autoOpen: false,
@@ -18,6 +18,8 @@ $(document).ready(function() {
         $("#dialog").dialog("open");
     });    
     
+    
+    // Success dialog pop-up
     var success = $("#dialogTwo");
     if (success) {
         $(function() {
