@@ -3,9 +3,9 @@
 <!DOCTYPE HTML>
 <html lang = "en">
     <head>
-        <title>Sean Misra</title>
+        <title>Sean Misra | Website</title>
 		<meta charset='UTF-8'>
-        <meta name = 'description' content='Sean Misra Profile'>
+        <meta name = 'description' content='Sean Misra Profile, a website built by Sean Misra. Personal summary, contact information, interests.'>
         <meta name ='author' content='Sean Misra'>
         <meta name='keywords' content='Sean, Misra, Computer Science, Software Engineering, Harvard Extension, Northeatern'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
