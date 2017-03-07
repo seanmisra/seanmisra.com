@@ -1,3 +1,5 @@
+<?php require('logic.php');?>
+
 <!DOCTYPE HTML>
 <html lang = "en">
     <head>
@@ -10,7 +12,10 @@
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>      
         <link rel='stylesheet' href='style.css'>
+        <script src="script.js"></script>
     </head>
     
     <body>
@@ -23,9 +28,36 @@
             <div class="icon_set">
                 <a href="https://www.linkedin.com/in/sean-misra-0972079b" class="fa fa-linkedin-square" aria-hidden="true" id="social_one"></a>
                 <a href="https://github.com/seanmisra" class="fa fa-github-square" aria-hidden="true" id="social_two"></a>
-                <a href="mailto:misra.s@husky.neu.edu?subject=Hello" class="fa fa-paper-plane" aria-hidden="true" id="social_three"></a>
+                <a class="fa fa-paper-plane" aria-hidden="true" id="social_three"></a>
+                
+                <!-- Dialog Contact Form -->
+                <div id="dialog" title="Contact"> 
+                    <form action="" method="post" id = "contactForm">
+                        <div class = 'form-group'> 
+                            <label class='sr-only' for='name'>Name: </label>
+                            <input class='form-control' id ="name" name="name" type="text" placeholder="Name" required oninvalid="this.setCustomValidity('I think you forgot your name')" oninput="setCustomValidity('')">
+                        </div>
+                        <div class = 'form-group'>
+                            <label class='sr-only' for='email'>Email: </label>
+                            <input class='form-control' id="email" name="email" type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="this.setCustomValidity('Email format looks funky')" oninput="setCustomValidity('')">
+                        </div>
+                        <div class = 'form-group'>
+                            <label class='sr-only' for='message'>Message: </label>
+                            <textarea class='form-control' id="message" name="message" type="text" placeholder="Message" rows=8 required oninvalid="this.setCustomValidity('I think you forgot the message')" oninput="setCustomValidity('')"></textarea>
+                        </div>    
+                        <div class='form-group' id = 'submit'>
+					                   <input type='submit' id ='submitButton' class='btn btn-success' value='Send'> 
+				                </div>
+                    </form>
+                </div>
+                
+                <!-- Dialog Contact Form -->
+                <?php if($success == true):?> 
+                    <div id="dialogTwo" title="Successfully Submitted"> 
+                        Thanks <?=$filteredName?> for your message. I'll try my best to get back as soon as possible!
+                    </div>
+                <?php endif;?> 
             </div>
-            
             
             <div class="panel-group">
                 <div class="panel panel-default">
@@ -63,6 +95,7 @@
                 </div>
             </div> 
         </main>
+        
         <footer class="footer">
             <div class="container">
                 <a href="https://github.com/seanmisra/seanmisra.com"><p class="text-muted">Code available at GitHub</p></a>
