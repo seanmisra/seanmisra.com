@@ -128,16 +128,9 @@ form-control {
 }
 
 
-/* Smaller Devices Only */
-/* CSS only for mobile */
-@media(max-width: 1000px) {
-    h1 {
-        font-size: 55px;
-        color: rgba(0, 0, 0, .6) !important;
-    }
-    
+@media only screen and (max-device-width: 1000px) {
     .tweetSpace {
-        font-size: 20px;
+        font-size: 30px;
     }
     
     .panel-group {
@@ -150,12 +143,26 @@ form-control {
     }
 
     .panel-body {
-        height: 15vh;
+        height: 25vh;
         font-size: 2vh;
     }
     
+    footer {
+        height: 100px;
+        font-size: 30px;
+    } 
+}
+
+/* Smaller Window Sizes/Browsers */
+/* CSS only for mobile */
+@media(max-width: 1000px) {
+    h1 {
+        font-size: 55px;
+        color: rgba(0, 0, 0, .6) !important;
+    }
+    
     .icon_set {
-        font-size: 14vh;
+        font-size: 13vh;
         margin-top: 35px;
         margin-bottom: 35px;
     }
