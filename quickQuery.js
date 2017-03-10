@@ -1,9 +1,11 @@
 /*
+
 REQUIRES jQUERY
 INCLUDE jQUERY BEFORE THIS FILE IN <HEAD>
 
 "element" parameter: an HTML element (e.g. "#myId" or "h1")
 "speed" parameter: "slow", "normal", "fast", 1000, 2000, etc. (in milliseconds)
+
 */
 
 
@@ -89,7 +91,7 @@ function dissapear(element, exitTime, exitSpeed, arriveTime, arriveSpeed, arrive
         leaveSpeed = exitSpeed; 
         
     setTimeout(function() {   
-        $(element).fadeTo(exitTime, 0);
+        $(element).fadeTo(leaveSpeed, 0);
         if(arriveTime) {
             var enterSpeed = "normal";
             var enterOpacity = 1; 
