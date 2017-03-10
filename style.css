@@ -28,6 +28,10 @@ h1 {
     color: #377bb5;
 }
 
+.tweetSpace>a:hover, li>a:hover {
+    color: #55acee;
+}
+
 .icon_set {
     margin-top: 50px;
     margin-bottom: 100px;
@@ -132,8 +136,26 @@ form-control {
         color: rgba(0, 0, 0, .6) !important;
     }
     
+    .tweetSpace {
+        font-size: 20px;
+    }
+    
+    .panel-group {
+        padding-top: 5vh;
+    }
+    
+    .panel-title {
+        font-size: 2.3vh;
+        height: 4.5vh;
+    }
+
+    .panel-body {
+        height: 15vh;
+        font-size: 2vh;
+    }
+    
     .icon_set {
-        font-size: 100px;
+        font-size: 14vh;
         margin-top: 35px;
         margin-bottom: 35px;
     }

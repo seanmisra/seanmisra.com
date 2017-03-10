@@ -4,12 +4,12 @@
      */
     
     // Consumer Key
-    define('CONSUMER_KEY', 'XXXXXXX');
-    define('CONSUMER_SECRET', 'XXXXXXX');
+    define('CONSUMER_KEY', 'XXXXXXXX');
+    define('CONSUMER_SECRET', 'XXXXXXXX');
 
     // User Access Token
-    define('ACCESS_TOKEN', 'XXXXXXX');
-    define('ACCESS_SECRET', 'XXXXXXX');
+    define('ACCESS_TOKEN', 'XXXXXXXX');
+    define('ACCESS_SECRET', 'XXXXXXXX');
 	
 	// Cache Settings
 	define('CACHE_ENABLED', false);
