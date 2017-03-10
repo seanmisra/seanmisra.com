@@ -55,6 +55,8 @@ $(document).ready(function() {
 
                 width = $(window).width();
                 var item = $('.tweet ul').find('li:first');
+                console.log(width);
+
                 
                 // exit if there are no more items, or the browser size is too small
                 if (item.length == 0 || width < 1000) { 
@@ -64,13 +66,21 @@ $(document).ready(function() {
                     });  
                     clearInterval(refreshId);
                 }
-
+                
                 else {
-                    //check for tiny tweets
-                    if(item.text().length < 80) {
+                    //check for tiny tweets depending on browser size
+                    //format accordingly/CSS absolute+relative acts as fallback in some cases
+                    if(item.text().length <90 && width) {
                         item.append("<a href='https://twitter.com/SeanMisra' class='fa fa-twitter' aria-hidden='true'>")
                     }
-
+                    else if (item.text().length < 127 && width > 1250) {
+                        item.append("<a href='https://twitter.com/SeanMisra' class='fa fa-twitter' aria-hidden='true'>")
+                    }
+                    else if (item.text().length < 140 && width > 1380) {
+                        item.append("<a href='https://twitter.com/SeanMisra' class='fa fa-twitter' aria-hidden='true'>")
+                    }
+                    
+                    console.log("The length is", item.text().length);
                     $('.tweetSpace').fadeOut(1000, function() {
                         $(this).html(item).fadeIn(1500);
                     });

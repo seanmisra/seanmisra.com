@@ -3,9 +3,13 @@ body {
     background-color: rgba(0, 0, 20, .02);
 }
 
+.jumbotron {
+    position: relative;
+    height: 250px;
+}
+
 h1 {
     font-size: 70px;
-    transition: color 1s;
 }
 
 .tweet {
@@ -15,9 +19,12 @@ h1 {
 .tweetSpace {
     opacity:0; 
     font-size: 16px; 
-    margin-top: 16px; 
+    margin-top: 10px; 
     padding-right: 200px; 
     padding-left:200px;
+    position: absolute; 
+    left: 0;
+    right: 0;
 }
 
 .tweetSpace>li {
@@ -129,8 +136,12 @@ form-control {
 
 
 @media only screen and (max-device-width: 1000px) {
+    .jumbotron {
+        height: 300px;
+    }
     .tweetSpace {
         font-size: 30px;
+        margin-top: -10px;
     }
     
     .panel-group {
