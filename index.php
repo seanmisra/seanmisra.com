@@ -9,6 +9,7 @@
         <meta name = 'description' content='Sean Misra Profile, a website built by Sean Misra. Personal summary, contact information, social media, and interests.'>
         <meta name ='author' content='Sean Misra'>
         <meta name='keywords' content='Sean, Misra, Computer Science, Software Engineering, Harvard Extension, Northeatern'>
+        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -26,9 +27,9 @@
         <link rel='stylesheet' href='style.css'>
         
         <!--Script Files-->
-        <script src="quickQuery.js"></script>
-        <script src='tweetie.js'></script>
-        <script src="script.js"></script>
+        <script src="scripts/quickQuery.min.js"></script>
+        <script src='scripts/tweetie.min.js'></script>
+        <script src="scripts/script.js"></script>
     </head>
     
     <body>
@@ -45,7 +46,7 @@
         <main>
             <!-- Three Main Icons -->
             <div class="icon_set">
-                <a href="https://www.linkedin.com/in/sean-misra-0972079b" class="fa fa-linkedin-square" aria-hidden="true" id="social_one"></a>
+                <a href="https://www.linkedin.com/in/seanmisra/" class="fa fa-linkedin-square" aria-hidden="true" id="social_one"></a>
                 <a href="https://github.com/seanmisra" class="fa fa-github-square" aria-hidden="true" id="social_two"></a>
                 <a href="#" class="fa fa-pencil-square" aria-hidden="true" id="social_three"></a>
                 
@@ -99,7 +100,7 @@
                         </h4>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">I got introduced to programming while participating in a social-media start-up in 2015. I have learnt some <strong>HTML/CSS/JavaScript, PHP, Java, and C/C++</strong>. I am interested in learning more about WebGL, SASS, mobile development, and AR/VR.</div>
+                        <div class="panel-body">I got introduced to programming while participating in a social-media start-up in 2015. I have learnt some <strong>HTML/CSS/JavaScript, PHP, Java, and C/C++</strong>. I am interested in learning more about WebGL, AngularJS, mobile development, and AR/VR.</div>
                     </div>
                 </div>
                 <div class="panel panel-default">
@@ -118,7 +119,7 @@
         
         <footer class="footer">
             <div class="container">
-                <a href="https://github.com/seanmisra/seanmisra.com"><p id = "git_message" class="text-muted">Code available at GitHub</p></a>
+                <a href="https://github.com/seanmisra/seanmisra.com"><p id = "footer_message" class="text-muted">Code available at GitHub.</p></a>
             </div>
         </footer>
     </body>

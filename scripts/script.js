@@ -95,5 +95,5 @@ $(document).ready(function() {
     timedAppear('#social_one', 1000, 1, 300);
     timedAppear('#social_two', 1000, 1, 600);
     timedAppear('#social_three', 1000, 1, 900);
-    cssHover('#git_message', "opacity", .5, 1, 1000);
+    cssHover('#footer_message', "opacity", .5, 1, 1000);
 });
