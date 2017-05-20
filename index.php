@@ -100,7 +100,7 @@
                         </h4>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">I got introduced to programming while participating in a social-media start-up in 2015. I have learnt some <strong>HTML/CSS/JavaScript, PHP, Java, and C/C++</strong>. I am interested in learning more about WebGL, AngularJS, mobile development, and AR/VR.</div>
+                        <div class="panel-body">I got introduced to programming while participating in a social-media start-up in 2015. I have learnt some <strong>HTML/CSS/JavaScript, Java, PHP, Python, and C/C++</strong>. I am interested in learning more about Spring MVC, AngularJS, cybersecurity, and AR/VR.</div>
                     </div>
                 </div>
                 <div class="panel panel-default">
